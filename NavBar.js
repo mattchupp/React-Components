@@ -64,7 +64,6 @@ const hamburger = {
 }
 
 
-
 const Toggle = styled.a`
   cursor: pointer; 
 `
@@ -78,10 +77,10 @@ function NavBar() {
     <>
       <Nav>
         <Link style={NavItem} to="/">Home</Link>
-        <Link style={NavItem} to="/history">History</Link>
-        <Link style={NavItem} to="/upcoming-launches">Upcoming Launches</Link> 
-        <Link style={NavItem} to="/past-launches">Past Launches</Link> 
-        <Link style={NavItem} to="/gallery">Gallery</Link> 
+        <Link style={NavItem} to="/path">Some Page</Link>
+        <Link style={NavItem} to="/path">Another Page</Link> 
+        <Link style={NavItem} to="/path">Some Other Page</Link> 
+        <Link style={NavItem} to="/path">Go Here</Link> 
       </Nav>
 
       <MobileNav>
@@ -111,9 +110,9 @@ function NavBar() {
                 <Link 
                   style={MobileNavItem} 
                   onClick={(() => setToggled(!isToggled))} 
-                  to="/history"
+                  to="/path"
                 >
-                  History
+                  Some Page
                 </Link>
               </NavItemMobile>
               
@@ -121,9 +120,9 @@ function NavBar() {
                 <Link 
                   style={MobileNavItem} 
                   onClick={(() => setToggled(!isToggled))} 
-                  to="/upcoming-launches"
+                  to="/path"
                 >
-                  Upcoming Launches
+                  Another Page
                 </Link> 
               </NavItemMobile>
               
@@ -131,9 +130,9 @@ function NavBar() {
                 <Link 
                   style={MobileNavItem} 
                   onClick={(() => setToggled(!isToggled))} 
-                  to="/past-launches"
+                  to="/path"
                 >
-                  Past Launches
+                  Some Other Page
                 </Link>
               </NavItemMobile>
 
@@ -141,9 +140,9 @@ function NavBar() {
                 <Link 
                   style={MobileNavItem} 
                   onClick={(() => setToggled(!isToggled))} 
-                  to="/gallery"
+                  to="/path"
                 >
-                  Gallery
+                  Go Here
                 </Link>
               </NavItemMobile>
             </MobileNavList>
